@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tech.Care</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Bootstrap Cdn Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!--  Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center rounded-pill">
+
+    <div class="d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/techcare_logo.png"  alt="">
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn d-md-none"></i>
+    </div><!-- End Logo -->
+
+      <nav class="navbar center-navbar navbar-expand-lg d-none d-md-block ms-4">
+        <ul class="d-flex align-items-center justify-content-evenly">
+          <li class="nav-item">
+            <a href="#"><img src="assets/img/icons/overview.svg" class="me-2">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="btn border py-2 px-3 rounded-pill"><img src="assets/img/icons/patients.svg" class="me-2" >Patients</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><img src="assets/img/icons/schedule.svg"  class="me-2">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><img src="assets/img/icons/message.svg"  class="me-2">Message</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"><img src="assets/img/icons/transactions.svg"  class="me-2">Transactions</a>
+          </li>
+        </ul>
+      </nav><!-- center navbar -->
+    
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item pe-3">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#">
+            <div class="d-flex align-items-center">
+              <div class="flex-shrink-0">
+                  <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/dr_jose.png" alt="" style="width: 40px; height: 40px;">
+              </div>
+              <div class="d-none d-md-block flex-grow-1 ms-1">
+                  <h6 class="m-0 fw-bold"><small>Dr. Jose Simmons</small></h6>
+                  <p class="m-0"><small>General Practitioner</small></p>
+              </div>
+            </div>
+          </a><!-- End Profile Image Icon -->
+        </li><!-- End Profile Nav -->
+        <div class="vertical-line"></div>
+        <li class="nav-item nav-icons">
+          <i class="bi bi-gear ps-2 me-2 "></i>
+          <i class="bi bi-three-dots-vertical  d-sm-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" ></i>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fw-bold" id="offcanvasRightLabel">TOP MENU</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <nav class="navbar center-navbar ">
+                <ul class="align-items-center">
+                  <li class="nav-item">
+                    <a href="index.html"><img src="assets/img/icons/overview.svg" class="me-2">Overview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index.html" class="btn border py-2 px-3 rounded-pill"><img src="assets/img/icons/patients.svg" class="me-2" >Patients</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index.html"><img src="assets/img/icons/schedule.svg"  class="me-2">Schedule</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index.html"><img src="assets/img/icons/message.svg"  class="me-2">Message</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="index.html"><img src="assets/img/icons/transactions.svg"  class="me-2">Transactions</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar rounded-top-3">
+    <div class="Patients d-flex align-items-center justify-content-between">
+      <h4 class="fw-bold">Patients</h4>
+      <i class="bi bi-search"></i>
+    </div>
+    <div class="patients-search mt-3">
+    <div class="d-flex align-items-center mb-3 px-2">
+      <div class="flex-shrink-0">
+          <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/patient/emily.png" alt="" style="width: 40px; height: 40px;">
+      </div>
+      <div class="flex-grow-1 ms-1">
+          <h6 class="m-0 fw-bold"><small>Emily Williams</small></h6>
+          <p class="m-0"><small>Female, 18</small></p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-three-dots fs-4"></i>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mb-3 px-2">
+      <div class="flex-shrink-0">
+          <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/patient/ryan.png" alt="" style="width: 40px; height: 40px;">
+      </div>
+      <div class="flex-grow-1 ms-1">
+          <h6 class="m-0 fw-bold"><small>Ryan Johnson</small></h6>
+          <p class="m-0"><small>Male, 45</small></p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-three-dots fs-4"></i>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mb-3 px-2">
+      <div class="flex-shrink-0">
+          <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/patient/brandon.png" alt="" style="width: 40px; height: 40px;">
+      </div>
+      <div class="flex-grow-1 ms-1">
+          <h6 class="m-0 fw-bold"><small>Bradon Mitchell</small></h6>
+          <p class="m-0"><small>Male, 36</small></p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-three-dots fs-4"></i>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mb-3 active-patient px-2">
+      <div class="flex-shrink-0">
+          <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/patient/jessica_taylor.png" alt="" style="width: 40px; height: 40px;">
+      </div>
+      <div class=" flex-grow-1 ms-1">
+          <h6 class="m-0 fw-bold"><small>Jessica Taylor</small></h6>
+          <p class="m-0"><small>Female, 28</small></p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-three-dots fs-4"></i>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mb-3 px-2">
+      <div class="flex-shrink-0">
+          <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/patient/samantha.png" alt="" style="width: 40px; height: 40px;">
+      </div>
+      <div class="flex-grow-1 ms-1">
+          <h6 class="m-0 fw-bold"><small>Samantha Johnson</small></h6>
+          <p class="m-0"><small>Female, 56</small></p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-three-dots fs-4"></i>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mb-3 px-2">
+      <div class="flex-shrink-0">
+          <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/patient/ashley.png" alt="" style="width: 40px; height: 40px;">
+      </div>
+      <div class="flex-grow-1 ms-1">
+          <h6 class="m-0 fw-bold"><small>Ashley Martinez</small></h6>
+          <p class="m-0"><small>Female, 54</small></p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-three-dots fs-4"></i>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mb-3 px-2">
+      <div class="flex-shrink-0">
+          <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/patient/olivia.png" alt="" style="width: 40px; height: 40px;">
+      </div>
+      <div class="flex-grow-1 ms-1">
+          <h6 class="m-0 fw-bold"><small>Olivia Brown</small></h6>
+          <p class="m-0"><small>Female, 32</small></p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-three-dots fs-4"></i>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mb-3 px-2">
+      <div class="flex-shrink-0">
+          <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/patient/tyler.png" alt="" style="width: 40px; height: 40px;">
+      </div>
+      <div class="flex-grow-1 ms-1">
+          <h6 class="m-0 fw-bold"><small>Tyler Davis</small></h6>
+          <p class="m-0"><small>Male, 19 </small></p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-three-dots fs-4"></i>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mb-3 px-2">
+      <div class="flex-shrink-0">
+          <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/patient/kevin.png" alt="" style="width: 40px; height: 40px;">
+      </div>
+      <div class="flex-grow-1 ms-1">
+          <h6 class="m-0 fw-bold"><small>Kevin Anderson</small></h6>
+          <p class="m-0"><small>Male, 30</small></p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-three-dots fs-4"></i>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mb-3 px-2">
+      <div class="flex-shrink-0">
+          <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/patient/dylan.png" alt="" style="width: 40px; height: 40px;">
+      </div>
+      <div class="flex-grow-1 ms-1">
+          <h6 class="m-0 fw-bold"><small>Dylan Thompson</small></h6>
+          <p class="m-0"><small>Male, 36</small></p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-three-dots fs-4"></i>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mb-3 px-2">
+      <div class="flex-shrink-0">
+          <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/patient/nathan.png" alt="" style="width: 40px; height: 40px;">
+      </div>
+      <div class="flex-grow-1 ms-1">
+          <h6 class="m-0 fw-bold"><small>Nathan Evans</small></h6>
+          <p class="m-0"><small>Male, 58</small></p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-three-dots fs-4"></i>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mb-3 px-2">
+      <div class="flex-shrink-0">
+          <img class="rounded-circle me-lg-2 img-fluid" src="assets/img/patient/mike.png" alt="" style="width: 40px; height: 40px;">
+      </div>
+      <div class="flex-grow-1 ms-1">
+          <h6 class="m-0 fw-bold"><small>Mike Nolan</small></h6>
+          <p class="m-0"><small>Male, 31</small></p>
+      </div>
+      <div class="d-flex justify-content-end">
+        <i class="bi bi-three-dots fs-4"></i>
+      </div>
+    </div>
+    </div>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+    <section class="section dashboard">
+      <div class="row">
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+          <div class="row">
+
+            <!-- Diagnosis History -->
+            <div class="col-12">
+              <div class="card diagnosis">
+                <div class="card-body">
+                  <h3 class="card-title fw-bold">Diagnosis History</h3>
+
+                  <!-- Line Chart -->
+                  <canvas id="lineChart"></canvas>
+
+        
+                 
+                  <div class="row d-flex justify-content-evenly g-2 p-2">
+                    <div class="col-md-3 respiratory-rate rounded-3" style="min-width: 170px;">
+                      <img src="assets/img/respiratory-rate.svg" class="img-fluid mt-3" alt="" width="70px" height="60px" />
+                      <p class="mt-2 fw-bold f5-5 mb-0">Respiratory Rate</p>
+                      <h3 class="fw-bold" id="resRate">20 <span>bpm</span></h3>
+                      <p class="mb-0"><small id="respLevel">Normal</small></p>
+                    </div>
+                    <div class="col-md-3 temperature rounded-3" style="min-width: 170px;">
+                      <img src="assets/img/temperature.svg" class="img-fluid mt-3" alt="" width="70px" height="60px" />
+                      <p class="mt-2 fw-bold f5-5 mb-0">Temperature</p>
+                      <h3 class="fw-bold"><span  id="tempRate">98.6 </span> &degF</h3>
+                      <p class="mb-0"><small id="tempLevel">Normal</small></p>
+                    </div>
+                    <div class="col-md-3 heart-rate rounded-3" style="min-width: 170px;">
+                      <img src="assets/img/HeartBPM.svg" class="img-fluid mt-3" alt="" width="70px" height="60px" />
+                      <p class="mt-2 fw-bold f5-5 mb-0">Heart Rate</p>
+                      <h3 class="fw-bold"><span id="heartRate">78</span> bpm</h3>
+                      <p class="mb-0"><small><i class="bi bi-caret-down-fill"></i> 
+                       <span id="heartLevel">Lower than Average</span></small></p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div><!-- Diagnosis History -->
+
+            
+
+            <!-- Diagnostic List -->
+            <div class="col-12 diagnostic-list">
+              <div class="card top-selling overflow-auto">
+
+                <div class="card-body pb-0">
+                  <h3 class="card-title fw-bold">Diagnostic List</h3>
+                  <div class="diagnostic">
+                  <table class="table list table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">Problem/Diagnosis</th>                       
+                        <th scope="col">Description</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Hypertension</td>
+                        <td>Chronic high blood pressure</td>
+                        <td>Under Observation</td>
+                      </tr>
+                      <tr>
+                        <td>Type 2 Diabetes</td>
+                        <td>Insulin resistance and elevated blood sugar</td>
+                        <td>Cured</td>
+                      </tr>
+                      <tr>
+                        <td>Asthma</td>
+                        <td>Recurrent episodes of bronchial constriction</td>
+                        <td>Inactive</td>
+                      </tr>
+                      <tr>
+                        <td>Osteoarthritis</td>
+                        <td>Degenerative joint disease</td>
+                        <td>Untreated</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- Diagnostic List-->
+
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        <div class="col-lg-4">
+
+          
+          <div class="card rounded-3 patient-profile">
+            <div class="card-body">
+              <div class="profile-img d-flex aline-items-center justify-content-center mt-3">
+              <img class="rounded-circle me-lg-2" src="assets/img/jessica_taylor.png" alt="" style="width: 200px; height: 200px;">
+            </div>
+            <h3 class="fw-bold text-center mt-3 patient-name">Jessica Taylor</h3>
+            <div class="patient-details mt-4">
+              <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0 me-3">
+                  <i class="bi bi-calendar4 "></i>
+                </div>
+                <div class="flex-grow-1 ms-1">
+                    <p class="m-0 text-dark "><small>Date Of Birth</small></p>
+                    <p class="m-0 text-dark fw-bold"><small>August 26, 1996</small></p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0 me-3">
+                  <i class="bi bi-gender-female "></i>
+                </div>
+                <div class="flex-grow-1 ms-1">
+                    <p class="m-0 text-dark "><small>Gender</small></p>
+                    <p class="m-0 text-dark fw-bold"><small>Female</small></p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0 me-3">
+                  <i class="bi bi-telephone "></i>
+                </div>
+                <div class="flex-grow-1 ms-1">
+                    <p class="m-0 text-dark "><small>Contact info</small></p>
+                    <p class="m-0 text-dark fw-bold"><small>(415) 555-1234</small></p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <div class="flex-shrink-0 me-3">
+                  <i class="bi bi-telephone "></i>
+                </div>
+                <div class="flex-grow-1 ms-1">
+                    <p class="m-0 text-dark "><small>Emergency Contacts</small></p>
+                    <p class="m-0 text-dark fw-bold"><small>(415) 555-1234</small></p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center ">
+                <div class="flex-shrink-0 me-3">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div class="flex-grow-1 ms-1 mb-3">
+                    <p class="m-0 text-dark "><small>Insurance Provider</small></p>
+                    <p class="m-0 text-dark fw-bold"><small>Sunrise Health Assurance</small></p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-center mt-4 mb-2">
+                    <button type="button" class="btn more-info rounded-pill px-4 fw-bold">Show All Information</button>
+              </div>      
+            </div>
+            </div>
+          </div>
+
+          
+          <div class="card lab-result rounded-3">
+            <div class="card-body pb-0">
+                <h4 class="fw-bold mt-3">Lab Results</h4>
+              <div class="results">
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0">Blood Tests</p>
+                  <i class="bi bi-download fw-bolder fs-4 me-2"></i>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0">CT Scans</p>
+                  <i class="bi bi-download fw-bolder fs-4 me-2"></i>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0">Radiology Reports</p>
+                  <i class="bi bi-download fw-bolder fs-4 me-2"></i>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0">X-rays</p>
+                  <i class="bi bi-download fw-bolder fs-4 me-2"></i>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <p class="mb-0">Urine Tests</p>
+                  <i class="bi bi-download fw-bolder fs-4 me-2"></i>
+                </div>
+              </div>  
+
+                       
+          
+
+            </div>
+          </div>
+
+
+        </div><!-- End Right side columns -->
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Botstrap cdn js link-->
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/chart.js"></script>
+
+  <!--main.js-->
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>
