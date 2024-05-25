@@ -3,14 +3,38 @@
 (function() {
   "use strict";
 
-  /**
+ /**
    * Sidebar toggle
    */
-  if (select('.toggle-sidebar-btn')) {
-    on('click', '.toggle-sidebar-btn', function(e) {
-      select('body').classList.toggle('toggle-sidebar')
-    })
+  const select = (el, all = false) => {
+    el = el.trim();
+    if (all) {
+      return [...document.querySelectorAll(el)];
+    } else {
+      return document.querySelector(el);
+    }
   }
+
+  const on = (type, el, listener, all = false) => {
+    let selectEl = select(el, all);
+    if (selectEl) {
+      if (all) {
+        selectEl.forEach(e => e.addEventListener(type, listener));
+      } else {
+        selectEl.addEventListener(type, listener);
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    if (select('.toggle-sidebar-btn')) {
+      on('click', '.toggle-sidebar-btn', function(e) {
+        select('body').classList.toggle('toggle-sidebar');
+      });
+    }
+  });
+
+
 
 
   /**
